@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print-a-Treat Creation | Customizable 3D-Printed Desserts</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F5; /* A warm, creamy off-white */
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1600x900/d1d5db/374151?text=3D+Cake+Printing+in+Action');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                Print-a-Treat <span class="text-pink-500">Creation</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-pink-500 font-semibold">Home</a>
+                <a href="products.html" class="hover:text-pink-500 transition-colors">Gallery</a>
+                <a href="about.html" class="hover:text-pink-500 transition-colors">Our Story</a>
+                <a href="workshops.html" class="hover:text-pink-500 transition-colors">Workshops</a>
+                <a href="contact.html" class="hover:text-pink-500 transition-colors">Contact</a>
+            </div>
+            <a href="customize.html" class="hidden md:block bg-pink-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-600 transition-all shadow-md hover:shadow-lg">
+                Design Your Treat
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                 <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-pink-500 font-semibold">Home</a>
+            <a href="products.html" class="block py-2 hover:text-pink-500 transition-colors">Gallery</a>
+            <a href="about.html" class="block py-2 hover:text-pink-500 transition-colors">Our Story</a>
+            <a href="workshops.html" class="block py-2 hover:text-pink-500 transition-colors">Workshops</a>
+            <a href="contact.html" class="block py-2 hover:text-pink-500 transition-colors">Contact</a>
+            <a href="customize.html" class="block mt-2 bg-pink-500 text-white text-center font-semibold px-5 py-2 rounded-lg hover:bg-pink-600 transition-all">Design Your Treat</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white h-[80vh] flex items-center justify-center">
+            <div class="text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Design. Print. Indulge.</h1>
+                <p class="text-lg md:text-2xl mb-8 font-light">The future of dessert is here. Your sweetest dreams, printed into delicious reality.</p>
+                <a href="customize.html" class="bg-white text-pink-500 font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-200 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Create Your Masterpiece
+                </a>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">From your imagination to a delicious creation in three simple steps.</p>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Step 1 -->
+                    <div class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-pink-100 text-pink-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="mouse-pointer-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">1. Design Online</h3>
+                        <p class="text-gray-500">Use our interactive platform to choose your shape, flavor, and intricate designs. Upload your own image or logo for a truly personal touch.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                         <div class="bg-purple-100 text-purple-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="printer" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">2. We Print with Precision</h3>
+                        <p class="text-gray-500">Our cutting-edge 3D food printers bring your design to life with unparalleled accuracy, minimizing waste and ensuring perfection.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="p-8 border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+                         <div class="bg-green-100 text-green-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="package-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">3. Enjoy Your Treat</h3>
+                        <p class="text-gray-500">Pick up your custom creation from our Toronto store or have it delivered for your special occasion. It's that simple!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Creations Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our <span class="gradient-text">Creations</span></h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x400/ec4899/ffffff?text=Geometric+Cake" alt="Geometric Cake" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x400/8b5cf6/ffffff?text=Corporate+Logo+Pastry" alt="Corporate Logo Pastry" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x400/10b981/ffffff?text=Wedding+Topper" alt="Wedding Cake Topper" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                     <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x400/f59e0b/ffffff?text=Kid's+Birthday+Design" alt="Kids Birthday Treat" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="products.html" class="text-pink-500 font-semibold text-lg hover:underline">
+                        Explore Our Gallery &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Promise Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <i data-lucide="sparkles" class="w-12 h-12 mx-auto text-pink-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Unmatched Personalization</h3>
+                    <p class="text-gray-600">If you can dream it, we can print it. Our technology allows for intricate designs impossible with traditional methods.</p>
+                </div>
+                <div>
+                    <i data-lucide="leaf" class="w-12 h-12 mx-auto text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sustainable & Eco-Friendly</h3>
+                    <p class="text-gray-600">3D printing precisely measures ingredients, significantly reducing food waste. We're committed to a sweeter planet.</p>
+                </div>
+                 <div>
+                    <i data-lucide="gem" class="w-12 h-12 mx-auto text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Premium Quality Ingredients</h3>
+                    <p class="text-gray-600">We partner with local suppliers to source the freshest, highest-quality ingredients for a taste as good as the look.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop Teaser -->
+        <section class="container mx-auto px-6 py-20">
+            <div class="bg-purple-500 rounded-2xl p-10 md:p-16 text-white grid md:grid-cols-2 items-center gap-8 shadow-xl">
+                <div class="md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Become a Dessert Designer</h2>
+                    <p class="mb-6">Join our interactive workshops in downtown Toronto! Get a hands-on experience with our 3D food printers and design your very own delicious treat to take home.</p>
+                    <a href="workshops.html" class="bg-white text-purple-500 font-bold px-6 py-3 rounded-lg hover:bg-gray-200 transition-all">
+                        Learn More & Book a Spot
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                     <img src="https://placehold.co/500x300/ffffff/8b5cf6?text=Hands-On+Workshop" alt="Workshop" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-lg font-semibold mb-4">Print-a-Treat Creation</h3>
+                    <p class="text-gray-400">Revolutionizing the dessert industry with personalized, sustainable, and memorable 3D-printed creations. Located in the heart of Toronto.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-pink-400 transition-colors text-gray-400">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-pink-400 transition-colors text-gray-400">Gallery</a></li>
+                        <li><a href="customize.html" class="hover:text-pink-400 transition-colors text-gray-400">Design Now</a></li>
+                        <li><a href="contact.html" class="hover:text-pink-400 transition-colors text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                     <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                     <address class="not-italic text-gray-400 space-y-2">
+                        <p>Queen Street West, Toronto, ON</p>
+                        <p>Email: <a href="mailto:hello@printatreat.com" class="hover:text-pink-400">hello@printatreat.com</a></p>
+                     </address>
+                     <div class="flex space-x-4 mt-4">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="w-6 h-6 hover:text-pink-400"></i></a>
+                        <a href="#" aria-label="TikTok"><i data-lucide="smartphone" class="w-6 h-6 hover:text-pink-400"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook" class="w-6 h-6 hover:text-pink-400"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Print-a-Treat Creation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
