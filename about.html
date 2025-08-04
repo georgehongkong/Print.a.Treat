@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Print-a-Treat Creation</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F5;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                Print-a-Treat <span class="text-pink-500">Creation</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="hover:text-pink-500 transition-colors">Home</a>
+                <a href="products.html" class="hover:text-pink-500 transition-colors">Gallery</a>
+                <a href="about.html" class="text-pink-500 font-semibold">Our Story</a>
+                <a href="workshops.html" class="hover:text-pink-500 transition-colors">Workshops</a>
+                <a href="contact.html" class="hover:text-pink-500 transition-colors">Contact</a>
+            </div>
+            <a href="customize.html" class="hidden md:block bg-pink-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-600 transition-all shadow-md hover:shadow-lg">
+                Design Your Treat
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                 <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 hover:text-pink-500 transition-colors">Home</a>
+            <a href="products.html" class="block py-2 hover:text-pink-500 transition-colors">Gallery</a>
+            <a href="about.html" class="block py-2 text-pink-500 font-semibold">Our Story</a>
+            <a href="workshops.html" class="block py-2 hover:text-pink-500 transition-colors">Workshops</a>
+            <a href="contact.html" class="block py-2 hover:text-pink-500 transition-colors">Contact</a>
+            <a href="customize.html" class="block mt-2 bg-pink-500 text-white text-center font-semibold px-5 py-2 rounded-lg hover:bg-pink-600 transition-all">Design Your Treat</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Baking the <span class="gradient-text">Future</span></h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're an innovative bakery specializing in fully customizable 3D-printed cakes and pastries, combining advanced technology with the timeless art of baking.</p>
+            </div>
+        </section>
+        
+        <!-- Our Story Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x450/d1d5db/374151?text=Our+Toronto+Bakery" alt="Print-a-Treat Creation Bakery" class="rounded-2xl shadow-xl w-full">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Where Technology Meets Taste</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Print-a-Treat Creation was born from a simple idea: what if your imagination was the only limit to a dessert's design? We set out to revolutionize the baking industry by merging cutting-edge 3D printing technology with the craft of high-end patisseries. This allows us to create intricate, precise, and stunning designs that were once impossible.</p>
+                        <p class="text-gray-600 leading-relaxed">From our flagship store in downtown Toronto, we're not just making cakes; we're crafting edible art that tells a story, celebrates moments, and brings joy to our community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <i data-lucide="quote" class="w-16 h-16 mx-auto text-pink-400 mb-6"></i>
+                <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+                <blockquote class="text-xl text-gray-700 max-w-4xl mx-auto italic leading-relaxed">
+                    "To produce personalized, sustainable, and memorable desserts for every occasion, emphasizing exceptional customer service, innovative design, and environmentally responsible practices. We aim to surpass customer expectations with tailor-made solutions that celebrate creativity while minimizing waste and supporting our local community."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What We Stand For</h2>
+                <div class="grid md:grid-cols-3 gap-10 text-center">
+                    <!-- Value 1: Innovation -->
+                    <div class="p-8">
+                        <div class="bg-purple-100 text-purple-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="lightbulb" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Innovation & Creativity</h3>
+                        <p class="text-gray-500">We leverage state-of-the-art 3D printing to push the boundaries of dessert design, offering unparalleled personalization and artistic freedom.</p>
+                    </div>
+                    <!-- Value 2: Sustainability -->
+                    <div class="p-8">
+                         <div class="bg-green-100 text-green-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="leaf" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Sustainability</h3>
+                        <p class="text-gray-500">Our process is designed to be eco-friendly by precisely using ingredients to minimize food waste. We're proud to source locally whenever possible.</p>
+                    </div>
+                    <!-- Value 3: Quality -->
+                    <div class="p-8">
+                         <div class="bg-pink-100 text-pink-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="gem" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Exceptional Quality</h3>
+                        <p class="text-gray-500">From the finest local ingredients to our meticulous design review process, we are committed to delivering a product that is as delicious as it is beautiful.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="container mx-auto px-6 py-20">
+            <div class="bg-purple-500 rounded-2xl p-10 md:p-16 text-white text-center shadow-xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Create?</h2>
+                <p class="mb-8 max-w-xl mx-auto">Explore our gallery for inspiration or jump right into our design studio to start your next edible masterpiece.</p>
+                <a href="customize.html" class="bg-white text-purple-500 font-bold px-8 py-4 rounded-lg hover:bg-gray-200 transition-all text-lg">
+                    Design Your Treat
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-lg font-semibold mb-4">Print-a-Treat Creation</h3>
+                    <p class="text-gray-400">Revolutionizing the dessert industry with personalized, sustainable, and memorable 3D-printed creations. Located in the heart of Toronto.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-pink-400 transition-colors text-gray-400">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-pink-400 transition-colors text-gray-400">Gallery</a></li>
+                        <li><a href="customize.html" class="hover:text-pink-400 transition-colors text-gray-400">Design Now</a></li>
+                        <li><a href="contact.html" class="hover:text-pink-400 transition-colors text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                     <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                     <address class="not-italic text-gray-400 space-y-2">
+                        <p>Queen Street West, Toronto, ON</p>
+                        <p>Email: <a href="mailto:hello@printatreat.com" class="hover:text-pink-400">hello@printatreat.com</a></p>
+                     </address>
+                     <div class="flex space-x-4 mt-4">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="w-6 h-6 hover:text-pink-400"></i></a>
+                        <a href="#" aria-label="TikTok"><i data-lucide="smartphone" class="w-6 h-6 hover:text-pink-400"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook" class="w-6 h-6 hover:text-pink-400"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Print-a-Treat Creation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
